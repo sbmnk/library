@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A JavaScript project</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>A JavaScript project</h1>
+  <div id="app"></div>
+  <div id="accordion">
+
+  </div>
+  <script src="main.js"></script>
+  <li class="button">
+    <button if='show_hide_form' class="btn btn-link" onclick='showHideForm()'>Show/hide form</button>
+  </li>
+  <form id="new_book_form" action="/add-book-form" onsubmit="receiveForm()" method="post" style="display: none;">
+   <ul>
+    <li>
+      <label for="name">Title:</label>
+      <input type="text" id="title" name="book_title">
+    </li>
+    <li>
+      <label for="mail">Author:</label>
+      <input type="text" id="author" name="book_author">
+    </li>
+    <li>
+      <label for="msg">Pages:</label>
+      <input type="int" id="pages" name="book_pages"></input>
+    </li>
+    <li>
+      <label for="msg">Read:</label>
+      <input type="text" id="read" name="book_read"></input>
+    </li>
+  </ul>
+  <li class="button">
+    <button type="submit">Add book</button>
+  </li>
+</form>
+</body>
+
+</html>
+
